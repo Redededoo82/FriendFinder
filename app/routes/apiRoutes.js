@@ -15,7 +15,10 @@ module.exports = function(app) {
         userPoints += parseInt(req.body.questionData[i]);
       }
 
+      //convert user data to an array
 
+      //compare difference between user score and friends scores.
       
+      //calculate absolute value of the differences.
   });
 };

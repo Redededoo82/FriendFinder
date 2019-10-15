@@ -162,7 +162,7 @@
             </div>
             <div class="modal-body">
               <h4 id="matchName"></h4>
-              <img id="matchPhoto" height=200 width=200 src ="/app/public/images/Jackle.jpg">
+              <img id="matchPhoto" height=200 width=200 src="/app/public/images/Perry.jpg" alt="Friend">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -176,7 +176,7 @@
   
   </html>
   
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
       $("#submit").on("click", function(event) {
         event.preventDefault();
         var newFriend = {
@@ -186,12 +186,11 @@
         };
         $.post("/api/friends", + newFriend,
           function(data) {
-            // console.log(data);
+            console.log(data.photo);
             $('#matchPhoto').attr("src", data.photo);
-          
           });
-      });
-      
-  </script> -->
+        });
+        
+  </script>
 </body>
 </html>

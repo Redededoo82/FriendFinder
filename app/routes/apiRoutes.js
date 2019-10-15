@@ -8,7 +8,7 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-
+    console.log(req.body);
       //Calculate total points for user submission
       var userPoints = 0;
       for(var i = 0; i < req.body.questionData.length; i++){

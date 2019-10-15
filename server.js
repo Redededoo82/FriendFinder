@@ -19,6 +19,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
  require("./app/routes/htmlRoutes")(app);
 
  //listen function logs ('serverside') when our server starts listening for client requests.
- app.listen(process.env.port, function() {
-    console.log("App listening on http://localhost:" + port, app.settings.env);
+ app.listen(port, function() {
+    console.log("App listening on http://localhost:" + port);
   });
